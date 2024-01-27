@@ -1,0 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.heroPicShadow
+{
+    box-shadow: 1rem 1rem 0px 0px #4831d4, -1rem -1rem 0px 0px #ccf381 ;
+}
