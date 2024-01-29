@@ -1,5 +1,5 @@
 export const styles = {
-    'container': `md:h-[100vh] flex flex-col md:flex-row mx-auto lg:max-h-[800px] my-20`,
+    'container': `md:h-[100vh] md:min-h-[600px] flex flex-col md:flex-row mx-auto lg:max-h-[800px] my-20`,
     'h1': `text-5xl font-bold text-center md:text-left`,
     'green': `#ccf381`,
     'blue': `#4831d4`,

@@ -7,10 +7,10 @@ import { styles } from '../styling'
 export default function Hero() {
     return (
         // Main Div here
-        <div className='md:h-[100vh] flex flex-col md:flex-row mx-auto lg:max-h-[800px]'>
-            <div className="left bg-[#4831d4] md:w-[60%] flex items-center min-h-[600px]">
+        <div className='md:h-[100vh] md:min-h-[600px] flex flex-col md:flex-row mx-auto lg:max-h-[800px] '>
+            <div className="left bg-[#4831d4] md:w-[60%] flex items-center">
                 {/* inner left container */}
-                <div className={`mt-20 sm:mt-16 ${styles.innerCont} sm:pr-8`}>
+                <div className={`mt-20 sm:mt-16 ${styles.innerCont} py-24 sm:pr-8`}>
                     <h1
                         className={`text-[#ccf381] ${styles.h1}`}>
                         Frontend Devloper</h1>
@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="right w-full md:w-[40%] bg-[#ccf381] md:h-full grid place-content-center relative min-h-[400px]">
                 <SvgBackground />
                 <figure className='w-full flex justify-center align-center'>
-                    <img src={HeroPic} alt="Hero Pic" className='heroPicShadow z-10 w-[55%] md:w-[60%] max-w-[450px]' />
+                    <img src={HeroPic} alt="Hero Pic" className='heroPicShadow z-10 w-[60%] md:w-[60%] max-w-[450px]' />
                 </figure>
             </div>
         </div>

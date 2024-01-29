@@ -8,13 +8,19 @@ import Section3 from './components/Section3';
 import Section4 from './components/Section4';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Sidebar from './components/Sidebar';
 
 function App() {
+
+  const [open, setOpen] = React.useState(false);
   return (
-    <div className='max-w-[1500px] mx-auto relative overflow-hidden'>
-      <div className=' w-[90%] lg:max-w-5xl max-w-3xl left-[50%] translate-x-[-50%] py-10 z-50 absolute top-0'>
+    <div className='h-full max-w-[1500px] mx-auto relative overflow-hidden'>
+      <div className=' w-[90%] lg:max-w-6xl max-w-3xl left-[50%] translate-x-[-50%] py-10 z-50 absolute top-0'>
         <Navbar />
       </div>
+
+      {open && <Sidebar />}
+      {/* <Sidebar /> */}
       <AnimatePresence>
         <InView triggerOnce>
           {({ inView, ref }) => (
