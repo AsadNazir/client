@@ -8,11 +8,11 @@ export default function Hero() {
     return (
         // Main Div here
         <div className='md:h-[100vh] flex flex-col md:flex-row mx-auto lg:max-h-[800px]'>
-            <div className="left bg-[#4831d4] md:w-[60%] flex items-center min-h-[400px]">
+            <div className="left bg-[#4831d4] md:w-[60%] flex items-center min-h-[600px]">
                 {/* inner left container */}
-                <div className={`sm:mt-16 md:w-[60ch] w-[90%] mx-auto sm:pr-8`}>
+                <div className={`mt-20 sm:mt-16 ${styles.innerCont} sm:pr-8`}>
                     <h1
-                        className='text-[#ccf381] text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold'>
+                        className={`text-[#ccf381] ${styles.h1}`}>
                         Frontend Devloper</h1>
                     <p className='text-sm text-white md:text-base py-6 md:py-12 w-full '>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos recusandae ea molestias nobis, quisquam ut repudiandae eaque rem doloremque maiores architecto totam blanditiis. Sit!
@@ -28,10 +28,10 @@ export default function Hero() {
 
                 </div>
             </div>
-            <div className="right border-2 w-full md:w-[40%] bg-[#ccf381] md:h-full grid place-content-center relative min-h-[300px]">
+            <div className="right w-full md:w-[40%] bg-[#ccf381] md:h-full grid place-content-center relative min-h-[400px]">
                 <SvgBackground />
                 <figure className='w-full flex justify-center align-center'>
-                    <img src={HeroPic} alt="Hero Pic" className='heroPicShadow z-10 w-[40%] md:w-[60%] max-w-[450px]' />
+                    <img src={HeroPic} alt="Hero Pic" className='heroPicShadow z-10 w-[55%] md:w-[60%] max-w-[450px]' />
                 </figure>
             </div>
         </div>
